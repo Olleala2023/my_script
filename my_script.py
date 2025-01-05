@@ -14,7 +14,7 @@ logging.basicConfig(
 def main():
     start_time = time.time()
     logging.info("Программа запущена")
-    print("Привет, это моя первая программа на Python! Обновлено. Делаем обновление второй раз.`Делаем обновление третий раз.")
+    print("Привет, это моя первая программа на Python! Обновлено. Делаем обновление второй раз.\nДелаем обновление третий раз.")
 
     try:
         response = requests.get("https://api.github.com")
