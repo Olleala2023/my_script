@@ -7,13 +7,14 @@ import logging
 logging.basicConfig(
     filename='my_script.log',
     level=logging.INFO,
-    format='%(asctime)s - %(message)s'
+    format='%(asctime)s - %(message)s',
+    encoding='utf-8'  # Указываем кодировку UTF-8
 )
 
 def main():
     start_time = time.time()
     logging.info("Программа запущена")
-    print("Привет, это моя первая программа на Python! Обновлено. Делаем обновление второй раз")
+    print("Привет, это моя первая программа на Python! Обновлено. Делаем обновление второй раз.`Делаем обновление третий раз.")
 
     try:
         response = requests.get("https://api.github.com")
